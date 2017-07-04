@@ -1,0 +1,100 @@
+font C&C Red Alert[INET]:size=10
+#xftfont Sans:size=10
+use_xft yes
+xftalpha 0.9
+update_interval 3.0
+total_run_times 0
+own_window yes
+out_to_x yes
+out_to_console no
+background yes
+own_window_type override
+own_window_transparent yes
+#own_window_hints background, sticky
+double_buffer yes
+minimum_size 0 0
+#maximum_width 220
+#maximum_height 1000
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+default_color 3d741a
+#default_color ffffff
+default_shade_color 61a435
+default_outline_color 61a435
+alignment top_right
+gap_x 0
+gap_y 0
+no_buffers yes
+cpu_avg_samples 2
+override_utf8_locale no
+uppercase no # set to yes if you want all text to be in uppercase
+
+own_window_argb_value 0
+own_window_argb_visual no
+own_window_colour 000000
+
+TEXT
+
+
+
+
+
+
+
+
+#${image /home/maps/Downloads/lenny.png -p 55,0 
+#-s 120x120}
+${font BLACK 
+CAPS:bold:size=30}${color white} ^_____^
+            ${font BLACK CAPS:bold:size=10}${color 
+#61a435}Arch${color}Linux${font}
+
+${color green}${font bold:size=7}SYSTEM${font}${hr 1}${color}
+
+Hostname: $alignr$nodename
+Kernel: $alignr$kernel
+Uptime: $alignr$uptime
+Temp: ${alignr}${acpitemp}C
+CPU: ${alignr}${freq} MHz
+Processes: ${alignr}$processes ($running_processes running)
+Load: ${alignr}$loadavg
+
+${color yellow}CPU${color} ${alignr}${cpu cpu1}%
+${cpubar 4 cpu1}
+
+${color yellow}Ram${color} ${alignr}$mem / $memmax ($memperc%)
+${membar 4}
+${color yellow}swap${color} ${alignr}$swap / $swapmax ($swapperc%)
+${swapbar 4}
+${color yellow}Highest CPU $alignr CPU% MEM%${color}
+${top name 1}$alignr${top cpu 1}${top mem 1}
+${top name 2}$alignr${top cpu 2}${top mem 2}
+${top name 3}$alignr${top cpu 3}${top mem 3}
+${top name 4}$alignr${top cpu 3}${top mem 4}
+${top name 5}$alignr${top cpu 3}${top mem 5}
+${top name 6}$alignr${top cpu 3}${top mem 6}
+${color yellow}Highest MEM $alignr CPU% MEM%${color}
+${top_mem name 1}$alignr${top_mem cpu 1}${top_mem mem 1}
+${top_mem name 2}$alignr${top_mem cpu 2}${top_mem mem 2}
+${top_mem name 3}$alignr${top_mem cpu 3}${top_mem mem 3}
+${top_mem name 4}$alignr${top_mem cpu 3}${top_mem mem 4}
+${top_mem name 5}$alignr${top_mem cpu 3}${top_mem mem 5}
+${top_mem name 6}$alignr${top_mem cpu 3}${top_mem mem 6}
+${color green}${font bold:size=7}Filesystem${font}${hr 1}${color}
+
+Root: ${alignr}${fs_free /} / ${fs_size /}
+${fs_bar 4 /}
+Home: ${alignr}${fs_free /home} / ${fs_size /home}
+${fs_bar 4 /home}
+Var: ${alignr}${fs_free /var} / ${fs_size /var}
+${fs_bar 4 /media/HDD0}
+Boot: ${alignr}${fs_free /boot} / ${fs_size /boot}
+${fs_bar 4 /media/HDD1}
+${color green}${font bold:size=7}NETWORK${font}${hr 1}${color}
+
+Down ${downspeed wlp3s0} /s ${alignr}Up ${upspeed wlp3s0} /s
+${downspeedgraph wlp3s0 25,107} ${alignr}${upspeedgraph wlp3s0 
+25,107}
+Total ${totaldown wlp3s0} ${alignr}Total ${totalup wlp3s0}

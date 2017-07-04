@@ -1,0 +1,1 @@
+/home/maps/.config/fisherman/fishtape/fishtape.fish

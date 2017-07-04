@@ -1,0 +1,1 @@
+/home/maps/.config/fisherman/getopts/getopts.fish

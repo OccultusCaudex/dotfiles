@@ -1,0 +1,1 @@
+/home/maps/.config/fisherman/z/functions/zadd.awk

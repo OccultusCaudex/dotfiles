@@ -1,0 +1,151 @@
+! urxvt
+
+URxvt*geometry:                53x20
+urxvt*letterSpace: 0
+!URxvt*font: -*-gohufont-*-*-*--10-*-*-*-*-*-*-*
+!URxvt*font:  xft:DejaVu Sans Mono:pixelsize=10
+!URxvt*font: -*-clean-*-*-*--12-*-*-*-*-*-*-*
+!URxvt*font: -*-terminus-*-*-normal-*-12-*-*-*-*-60-*-*
+URxvt*font: xft: Misc Tamsyn:pixelsize=11
+!URxvt*font: xft:GohuFont:pixelsize=11
+!URxvt*font: -*-tewii-*-*-*-*-12-*-*-*-*-*-*-*
+URxvt*depth:                32
+!URxvt.background:            [85]#0d0d0d
+URxvt*background: rgba:0000/0000/0200/c800
+URxvt*foreground:            [100]#7b7b7b
+URxvt*borderLess:   False
+URxvt*scrollBar:    False
+URxvt*cursorBlink:   True
+!URxvt*transparent:   True
+!URxvt*shading: 30
+URxvt*tintColor:   #494949
+!URxvt*tintColor: #6d9e3f
+URxvt*saveLines:  5000
+URxvt*termName:    rxvt-unicode
+URxvt*fading:   10
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox 
+URxvt.matcher.button: 2
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+! Add tabs
+URxvt.perl-ext-common: ...,tabbed,...
+! Set terminal padding
+URxvt.internalBorder: 10
+
+! Enables copy/paste with Ctrl-Shift-C/V
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.perl-ext-common: default,clipboard
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+
+!! smear - dcat
+!!changeback
+!*background:	#20242c
+!*foreground:	#b3b8c4
+
+!*color0:	#3e4853
+!*color1:	#b06a58
+!*color2:	#95b47b
+!*color3:	#e5c078
+!*color4:	#58698c
+!*color5:	#7b5e8d
+!*color6:	#82a1b2
+!*color7:	#cccaca
+
+!*color8:	#525c67
+!*color9:	#ba7e6c
+!*color10:	#a9c88f
+!*color11:	#f9d48c
+!*color12:	#6c7da0
+!*color13:	#8f72a1
+!*color14:	#96b5c6
+!*color15:	#e0dede
+
+!black
+! *color0:     #AF875F
+! *color8:     #AF875F
+*color0:     #101010
+*color8:     #404040
+!red
+*color1:     #E84F4F
+*color9:     #D23D3D
+!green
+*color2:     #B8D68C
+*color10:    #A0CF5D
+!yellow
+*color3:     #E1AA5D
+*color11:    #F39D21
+!blue
+*color4:     #7DC1CF
+*color12:    #4E9FB1
+!magenta
+*color5:     #9B64FB
+*color13:    #8542FF
+!cyan
+*color6:     #6D878D
+*color14:    #42717B
+!white
+*color7:     #dddddd
+*color15:    #dddddd
+
+!URxvt*borderColor:        #151515
+!URxvt*colorBD:            #ffffff
+!URxvt*cursorColor:        #ff8939
+!URxvt*cursorColor2:       #151515
+
+
+
+/*
+!Original theme
+!Pnevma1
+!black
+*color0: #282a2e
+*color8: #373b41
+!red
+*color1: #752121
+*color9: #d73434
+!green
+*color2: #66a029
+*color10: #94bd68
+!yellow
+*color3: #953d00
+*color11: #f6af23
+!blue
+*color4: #124b7a
+*color12: #4b7294
+!magenta
+*color5: #17664c
+*color13: #447c5b
+!cyan
+*color6: #47615e
+*color14: #457c75
+!white
+*color7: #1c344b
+*color15: #598367
+*/
+!Pnevma2 - A heavy mod of the original.
+!*color0: #2F2E2D
+!*color8: #4A4845
+!*color1: #C37561
+!*color9: #D19485
+!*color2: #A0A57E
+!*color10: #B6B99D
+!*color3: #D1A375
+!*color11: #DEBC9C
+!*color4: #7985A3
+!*color12: #98A1B9
+!*color5: #AB716D
+!*color13: #BE918E
+!*color6: #98B9B1
+!*color14: #CBE6CB
+!*color7: #D0D0D0
+!*color15: #EFEFEF
+
+!!! This one matches image URLs and open them in FEH
+URxvt*matcher.pattern.1:    
+\\https?:\/\/[\\w-.]*\/[\\w./?&@#-]*.(jpg|jpeg|png)
+URxvt*matcher.launcher.1:    feh $0

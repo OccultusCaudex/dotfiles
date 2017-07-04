@@ -1,0 +1,1 @@
+/home/maps/.config/fisherman/segment/segment_close.fish
